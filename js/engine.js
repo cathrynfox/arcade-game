@@ -91,10 +91,14 @@ var Engine = (function(global) {
      * render methods.
      */
     function updateEntities(dt) {
-        allEnemies.forEach(function(enemy) {
-            enemy.update(dt);
-        });
-        player.update();
+        if (gameStarted)
+        {
+            allEnemies.forEach(function(enemy) {
+                enemy.update(dt);
+            });
+            player.update();
+            gem.update();
+        }
     }
 
     /* This function initially draws the "game level", it will then call
@@ -151,8 +155,8 @@ var Engine = (function(global) {
         allEnemies.forEach(function(enemy) {
             enemy.render();
         });
-
         player.render();
+        gem.render();
     }
 
     /* This function does nothing but it could have been a good place to
@@ -172,7 +176,14 @@ var Engine = (function(global) {
         'images/water-block.png',
         'images/grass-block.png',
         'images/enemy-bug.png',
-        'images/char-boy.png'
+        'images/char-boy.png',
+        'images/char-cat-girl.png',
+        'images/char-horn-girl.png',
+        'images/char-pink-girl.png',
+        'images/char-princess-girl.png',
+        'images/gem-blue.png',
+        'images/gem-green.png',
+        'images/gem-orange.png'
     ]);
     Resources.onReady(init);
 

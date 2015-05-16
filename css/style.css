@@ -1,3 +1,42 @@
 body {
+    font-family: 'Lato', sans-serif;
     text-align: center;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+.btn {
+    border: 1px solid black;
+}
+
+#game-over {
+
+    /* appear over canvas */
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 505px;
+    height: 600px;
+    background-color: white;
+    border: 1px solid black;
+
+    /* invisible until game is lost */
+    display: none;
+}
+
+#start-button {
+
+    /* appear on canvas */
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: 300px;
 }
