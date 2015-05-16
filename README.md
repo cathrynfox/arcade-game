@@ -1,6 +1,17 @@
-frontend-nanodegree-arcade-game
+Frogger Arcade Game (Clone)
 ===============================
 
-Students should use this rubric: https://www.udacity.com/course/viewer#!/c-ud015/l-3072058665/m-3072588797
+Project 3 in the Udacity Front End Web Developer Nanodegree
 
-for self-checking their submission.
+Check it out here: http://alexanderverge.github.io/frontend-nanodegree-arcade-game
+
+## How to Play
+Click [here](http://alexanderverge.github.io/frontend-nanodegree-arcade-game) then click "Start!"
+
+For the best experience, maximize your browser window size.
+
+## Controls
+Move the sprite using the arrow keys!
+
+## Goal
+Collect the gems, but avoid the bugs!
