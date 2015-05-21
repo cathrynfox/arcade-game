@@ -77,12 +77,12 @@ var randomGemValue = function() {
 };
 
 /* Enemy Class */
-var Enemy = function() {
+var Enemy = function(spriteStr) {
     var p = randomEnemyStartPosition();
     this.x = p.x;                   // x position
     this.y = p.y;                   // y position
     this.v = randomEnemyVelocity(); // velocity
-    this.sprite = 'images/enemy-bug.png';
+    this.sprite = spriteStr;        // sprite string
 };
 
 // Update the enemy's position (dt is a time delta between ticks)
@@ -124,7 +124,7 @@ var Player = function() {
     this.y = playerStartPosition.y;
     this.lives = 3;
     this.score = 0;
-    this.sprite = randomCharacter();
+    this.sprite = 'images/char.png';
     this.key = null;
 };
 
@@ -262,9 +262,11 @@ var time = function() {
 
 /* Object Instantiation */
 var allEnemies = [];
-for (var i = 0; i < numEnemies; i++) {
-    allEnemies.push(new Enemy());
-}
+allEnemies.push(new Enemy('images/p-1.png'));
+allEnemies.push(new Enemy('images/p-2.png'));
+allEnemies.push(new Enemy('images/p-3.png'));
+allEnemies.push(new Enemy('images/p-4.png'));
+allEnemies.push(new Enemy('images/p-5.png'));
 var player = new Player();
 var gem = new Gem();
 
